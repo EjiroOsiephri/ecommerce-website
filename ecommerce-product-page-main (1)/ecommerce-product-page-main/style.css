@@ -1,0 +1,204 @@
+body {
+  font-family: "Rubik", sans-serif;
+  background: hsl(223, 64%, 98%);
+  height: 580px;
+}
+.container {
+  display: flex;
+  padding-left: 15px;
+}
+.container img {
+  width: 20px;
+  height: 20px;
+  padding-left: 90px;
+}
+.container .fa-solid {
+  cursor: pointer;
+}
+.container .fa-cart-shopping {
+  position: relative;
+  left: 60px;
+  top: 4px;
+}
+.attribution {
+  position: relative;
+  top: -700px;
+}
+.container h1 {
+  font-size: 23px;
+  color: hsl(220, 13%, 13%);
+  position: relative;
+  top: -20px;
+  left: 40px;
+}
+.list {
+  width: 230px;
+  height: 800px;
+  padding-left: 14px;
+  background-color: white;
+  padding-top: 14px;
+  position: relative;
+  z-index: 10;
+  top: -380px;
+  margin-left: -280px;
+}
+.swiper-button-prev {
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  border-radius: 50%;
+  font-size: 10px;
+  color: black;
+  font-weight: 900;
+  background-color: white;
+  padding: 10px;
+  /* top: -150px; */
+}
+.swiper-button-next {
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  border-radius: 50%;
+  font-size: 10px;
+  color: black;
+  font-weight: 900;
+  background-color: white;
+  padding: 10px;
+}
+.containers h4 {
+  font-weight: 800;
+  font-size: 21px;
+}
+.container {
+  margin-top: 30px;
+}
+.swiper-slide img {
+  width: 100%;
+}
+.containers {
+  position: relative;
+  top: -790px;
+  margin-left: 20px;
+}
+.containers h5 {
+  color: hsl(220, 14%, 75%);
+  line-height: 20px;
+}
+.containers h3 {
+  font-size: 14px;
+  color: hsl(26, 100%, 55%);
+  text-transform: uppercase;
+}
+.containers h1 {
+  font-size: 25px;
+}
+.swiper {
+  width: 80%;
+  border-radius: 10px;
+  height: fit-content;
+  position: relative;
+  /* isolation: isolate; */
+  z-index: 6;
+  width: 300px;
+  height: 300px;
+  top: 20px;
+}
+ul li a {
+  outline: none;
+  text-decoration: none;
+  color: hsl(0, 0%, 0%);
+  font-weight: 800;
+}
+.main {
+  display: block;
+}
+li {
+  list-style-type: none;
+  padding-bottom: 12px;
+}
+#icon-previous {
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 50%;
+  position: relative;
+  top: -150px;
+  left: -40px;
+}
+.flex-end {
+  display: flex;
+}
+.flex-end h4 span {
+  position: absolute;
+  left: 100px;
+  padding-left: 30px;
+  font-size: 15px;
+  margin-right: 10px;
+  color: orange;
+  font-weight: 800;
+  background-color: hsl(25, 100%, 94%);
+  padding: 6px 17px;
+  border-radius: 10px;
+}
+.flex-end h5 {
+  text-decoration: line-through;
+  position: relative;
+  left: 100px;
+  top: 8px;
+}
+.box-increment {
+  width: 270px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: hsl(220, 14%, 75%);
+}
+.box-increment p {
+  position: relative;
+  left: 120px;
+  top: -20px;
+  font-size: 20px;
+  font-weight: 700;
+}
+#plus {
+  top: 18px;
+  display: flex;
+  position: relative;
+  font-size: 4px;
+  padding-left: 13px;
+  width: 10px;
+  cursor: pointer;
+}
+#minus {
+  cursor: pointer;
+  left: 230px;
+  position: relative;
+  font-size: 4px;
+  width: 10px;
+  top: -65px;
+}
+.btn {
+  margin-top: 30px;
+  width: 250px;
+  border-radius: 10px;
+  padding: 10px 0;
+  background-color: hsl(26, 100%, 55%);
+  color: white;
+  font-weight: 800;
+  border: none;
+}
+#cart-btn {
+  padding-right: 30px;
+  color: white;
+}
+.par-cart {
+  color: hsl(26, 100%, 55%);
+  font-weight: 800;
+  position: relative;
+  left: 44px;
+  padding: 1px;
+  width: 20px;
+  height: 20px;
+  background-color: hsl(25, 100%, 94%);
+  top: -30px;
+}
