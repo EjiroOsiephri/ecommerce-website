@@ -202,3 +202,225 @@ li {
   background-color: hsl(25, 100%, 94%);
   top: -30px;
 }
+
+
+@media screen and (min-device-width: 860px) {
+  body {
+    font-family: "Rubik", sans-serif;
+    background-color: hsl(223, 64%, 98%);
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  #icon-open {
+    display: none;
+  }
+  .none {
+    display: none;
+  }
+  .container {
+    display: flex;
+  }
+  .container h1 {
+    color: hsl(220, 13%, 13%);
+    margin-left: 120px;
+    font-weight: 600;
+    transform: translateX(-100px);
+    font-size: 17px;
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+
+    transform: translateY(-510px);
+  }
+  li::after {
+    content: "";
+    width: 0%;
+    background: orange;
+    display: block;
+    height: 2px;
+    transition: 0.5s;
+    position: absolute;
+  }
+  li:hover::after {
+    width: 100%;
+  }
+  li {
+    transform: translate(-180px, 35px);
+  }
+  ul li a {
+    text-decoration: none;
+    color: hsl(220, 14%, 75%);
+    padding: 10px 13px;
+  }
+  ul li {
+    list-style-type: none;
+  }
+  #avatar {
+    width: 50px;
+    height: 50px;
+    transform: translateX(770px);
+  }
+  #cart-id {
+    transform: translate(720px, 20px);
+  }
+  .par-cart {
+    transform: translate(707px, -8px);
+    cursor: pointer;
+  }
+  .cart-dropdown {
+    position: absolute;
+    z-index: 6;
+    transform: translate(600px);
+    width: 400px;
+    padding-bottom: 200px;
+    padding-top: 8px;
+    padding-left: 12px;
+    border-radius: 15px;
+    height: 75px;
+    background-color: white;
+  }
+  #cart-btn {
+    padding-right: 30px;
+    color: white;
+  }
+  #h3-cart {
+    margin-left: 70px;
+    margin-top: -40px;
+  }
+  .img-thumb {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+  }
+  .swiper-slide img {
+    width: 400px;
+    height: 400px;
+    margin-left: 50px;
+    border-radius: 13px;
+  }
+  #checkout {
+    width: 250px;
+    border-radius: 10px;
+    padding: 10px 0;
+    background-color: hsl(26, 100%, 55%);
+    color: white;
+    font-weight: 800;
+    border: none;
+    margin-left: 50px;
+    margin-top: 50px;
+  }
+  #span {
+    margin-left: 190px;
+    transform: translateY(-890px);
+  }
+  #h4-dropdown {
+    margin-left: 80px;
+    transform: translate(30px, 40px);
+    margin-top: -40px;
+  }
+  #delete {
+    height: fit-content;
+    cursor: pointer;
+  }
+  #icon-prev {
+    display: none;
+  }
+  #icon-next {
+    display: none;
+  }
+  .par-cart {
+    transform: translate(700px, -10px);
+    color: orange;
+    width: 20px;
+    border-radius: 15px;
+    background-color: hsl(25, 100%, 94%);
+    padding-left: 10px;
+    height: 20px;
+  }
+  .containers {
+    transform: translate(650px, -450px);
+  }
+  .containers h3 {
+    color: hsl(26, 100%, 55%);
+    text-transform: uppercase;
+    font-size: 16px;
+  }
+  .containers h5 {
+    margin-top: 40px;
+    color: hsl(220, 14%, 75%);
+    font-size: 13px;
+  }
+  .btn {
+    width: 250px;
+    border-radius: 10px;
+    padding: 10px 0;
+    background-color: hsl(26, 100%, 55%);
+    color: white;
+    font-weight: 800;
+    border: none;
+  }
+  .flex-end {
+    display: flex;
+  }
+  .flex-end h4 span {
+    position: absolute;
+    left: 100px;
+    padding-left: 30px;
+    font-size: 15px;
+    margin-right: 10px;
+    color: orange;
+    font-weight: 800;
+    background-color: hsl(25, 100%, 94%);
+    padding: 6px 17px;
+    border-radius: 10px;
+  }
+  .flex-end h5 {
+    text-decoration: line-through;
+    position: relative;
+    left: 150px;
+    top: -12px;
+  }
+  .increment-container {
+    margin-top: 50px;
+    width: 250px;
+    background-color: hsl(223, 64%, 98%);
+    border-radius: 15px;
+    height: 40px;
+    box-shadow: -15px 15px 14px white;
+  }
+
+  .increment-container p {
+    margin-left: 120px;
+    font-weight: 800;
+    font-size: 22px;
+    margin-top: -14px;
+  }
+  #plus {
+    top: 6px;
+    /* display: flex; */
+    position: relative;
+    font-size: 4px;
+    padding-left: 13px;
+    width: 10px;
+    cursor: pointer;
+  }
+  #minus {
+    cursor: pointer;
+    left: 225px;
+    position: relative;
+    font-size: 4px;
+    width: 10px;
+    top: -49px;
+  }
+  #delete {
+    transform: translateX(120px);
+  }
+  .img-end img {
+    transform: translate(80px, -470px);
+    width: 80px;
+    height: 80px;
+    border-radius: 12px;
+  }
+}
