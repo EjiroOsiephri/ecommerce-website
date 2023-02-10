@@ -55,6 +55,76 @@ plus.addEventListener("click", () => {
   parTwo.innerText++;
   parCart.innerText++;
 });
+minus.addEventListener("click", () => {
+  if (parTwo.innerText > 0) {
+    parTwo.innerText--;
+    parCart.innerText--;
+  }
+});
+// cartId.addEventListener("click", () => {
+//   cartId.classList.toggle("gone");
+// });
+
+imgone.addEventListener("click", () => {
+  imgone.style.border = "2px solid red";
+  imgProduct.src = "images/image-product-1.jpg";
+});
+
+imgtwo.addEventListener("click", () => {
+  imgtwo.style.border = "2px solid red";
+  imgProduct.src = "images/image-product-2.jpg";
+});
+
+imgthree.addEventListener("click", () => {
+  imgthree.style.border = "2px solid red";
+  imgProduct.src = "images/image-product-3.jpg";
+});
+
+imgfour.addEventListener("click", () => {
+  imgfour.style.border = "2px solid red";
+  imgProduct.src = "images/image-product-4.jpg";
+});
+
+const swiper = new Swiper(".swiper", {
+  // Optional parameters
+
+  loop: true,
+
+  // If we need pagination
+  //   pagination: {
+  //     el: ".swiper-pagination",
+  //   },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  // And if we need scrollbar
+  //   scrollbar: {
+  //     el: ".swiper-scrollbar",
+  //   },
+});
+
+// if (parTwo.innerText == 0) {
+//   else if (parTwo.innerText > 0) {
+//   console.log("me");
+//   // minus.removeAttribute("disabled");
+// }
+
+open.addEventListener("click", () => {
+  list.style.marginLeft = "0px";
+});
+close.addEventListener("click", () => {
+  list.style.marginLeft = "-280px";
+});
+
+plus.addEventListener("click", () => {
+  console.log("ejiro");
+  parTwo.innerText++;
+  parCart.innerText++;
+});
 
 // cartId.addEventListener("click", () => {
 //   cartId.classList.toggle("gone");
@@ -79,3 +149,39 @@ imgfour.addEventListener("click", () => {
   imgfour.style.border = "2px solid red";
   imgProduct.src = "images/image-product-4.jpg";
 });
+
+minus.addEventListener("click", () => {
+  if (parTwo.innerText > 0) {
+    parTwo.innerText--;
+    parCart.innerText--;
+  }
+});
+cartId.addEventListener("click", () => {
+  if (parCart.innerHTML == 0) {
+    cartDropDown.classList.toggle("none");
+    imgThumb.style.visibility = "hidden";
+    checkout.style.visibility = "hidden";
+    hFourDropDown.style.visibility = "hidden";
+    hThree.style.visibility = "visible";
+  } else {
+    hThree.innerText = "Fall Limited Edition";
+    hFourDropDown.innerText = "125 * " + parCart.innerText;
+    hFourDropDown.style.visibility = "visible";
+    span.innerText = 125 * parCart.innerText;
+    imgThumb.style.visibility = "visible";
+    checkout.style.visibility = "visible";
+    cartDropDown.classList.toggle("none");
+  }
+});
+
+iconDelete.addEventListener("click", () => {
+  imgThumb.style.visibility = "hidden";
+  hThree.style.visibility = "visible";
+  parTwo.innerText = "0";
+  parCart.innerText = "0";
+  checkout.style.visibility = "hidden";
+  hFourDropDown.style.visibility = "hidden";
+  hThree.style.visibility = "visible";
+  hThree.innerText = "This cart is Empty";
+});
+
