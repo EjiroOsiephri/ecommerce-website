@@ -1,4 +1,4 @@
 # ecommerce-website
 
 links
-[https://tiny-mochi-eb683b.netlify.app/]
+[https://fabulous-cactus-1613ef.netlify.app/]
